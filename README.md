@@ -29,8 +29,11 @@ This project removes the kill switch **without modifying the app at all**. A sma
 
 | Version | Date | Result | Notes |
 |---|---|---|---|
-| 9.0.0 | Nov 2014 | Works | Everything works perfectly. |
-| Anything else | | Not tested | See [Adapting to other versions](#adapting-to-other-versions) and [Reporting test results](#reporting-test-results). |
+| 3.1.0 - 6.14.5 | October 2010 - October 2014 | Not Needed | There is **no** kill switch in these versions. |
+| 7.0.0 - 7.7.0 | July 2013 - October 2014 | Works | Everything works perfectly. |
+| 8.0.0 - 8.4.1 | May 2014 - October 2014 | Works | Everything works perfectly. |
+| 9.0.0 - 9.27.2 | Nov 2014 - June 2016 | Works | Everything works perfectly. |
+| 9.31.3+ | July 2016 - Latest | Not Working | Limitation of mitmproxy user certificates, see [Requirements](#requirements). |
 
 Details of the 9.0.0 build, from decompiling it with jadx:
 
@@ -38,7 +41,7 @@ Details of the 9.0.0 build, from decompiling it with jadx:
 - `minSdkVersion` 18, `targetSdkVersion` 17
 - native libraries for `armeabi-v7a` only (32-bit ARM)
 
-I have only tested this one version. Other versions may use a different field layout or response framing, so treat them as untested until you've checked (see the adaptation section).
+I have only tested these versions. Other versions may use a different field layout or response framing, so treat them as untested until you've checked (see the adaptation section).
 
 ### Test environment
 
